@@ -27,3 +27,5 @@ RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
     cd ..
 RUN wget https://dist.nuget.org/win-x86-commandline/latest/nuget.exe && \
     mono nuget.exe install ReportGenerator
+RUN apt-get install -y git
+RUN git clone https://github.com/scipy/scipy.git
